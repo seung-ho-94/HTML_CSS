@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS selector</title>
+<style>
+    h1,p,div { color: blue; }
+    div {
+        width: 100px; height: 100px;
+        border: 1px solid black;
+    }
+    div > div {
+        background-color: yellow;
+    }
+    body > div {
+        border: 2px dotted blue;
+    }
+    body > div > div {
+        width: 50px; height: 50px;
+        background-color: green;
+    }
+    body > div > div > div {
+        width: 20px; height: 20px;
+        background-color: gray;
+    }
+    .d2 {
+        background-color: aqua;
+    }
+    .bg-orange {
+        background-color: orange;
+    }
+</style>
+</head>
+<body>
+    <h1>CSS div 선택자(selector)</h1>
+    <p>div의 선택자(selector)에 따른 border색, 바탕색 지정</p>
+    <div class="d2">1</div>
+    <hr>
+    
+    <div class="d2">2</div>
+    <hr>
+    
+    <div id="div3">
+        <div class="bg-orange">3</div>
+        <section>
+            <div>s3</div>
+        </section>
+    </div>
+    <hr>
+    
+    <div>
+        <div>
+            <div>4</div>
+        </div>
+    </div>
+    <hr>
+    
+    <div>
+        <div>
+            <div>1</div>
+            <div class="bg-orange">2</div>
+            <div class="bg-orange">3</div>
+        </div>
+    </div>
+    
+    
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

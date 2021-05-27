@@ -1,0 +1,19 @@
+    h1 { background-color: aqua; }
+    h2 { background-color: yellow; }
+    h2 { background-color: orange; }
+    
+    /* 선택자 . : class 의미 */
+    .red { background-color: red; } 
+    .green { background-color: green; }
+    .yellow { background-color: yellow; }
+    
+    /* 선택자 # : id를 의미 */
+    #yellow { background-color: yellow; }
+    
+    /* 선택자 우선 순위 : id, class, 태그(tag) */
+    p { background-color: gray; }
+    div > p { background-color: orange; } /* 선택자 구체적이면 가중치 높아짐 */
+    
+    /* green 클래중에서 p태그에 있는 green 클래스로 지정하면
+        일반 green 클래스보다 가중치가 높아서 우선 적용 */
+    p.green { background-color: greenyellow; }
